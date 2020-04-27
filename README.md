@@ -1,5 +1,7 @@
 # Endless_Runner_Medallo
-Alpha Version 1
+Alpha Version 1.1
+
+En esta versión se hizo el refactor de todo el codigo que no tenía ningún patrón implementado aún, no se modificó nada en el ejecutable ya que aún falta arreglar el Spawner de los objetos para que sea de manera "aleatoria" y no se modificó aún la estetica y los audios del proyecto, me enfoqué más que nada en el codigo y cómo dije sólo falta arreglar el Spawner para implementar la tienda y arreglar la estética del proyecto para su entrega final en el Beta.
 
 ELEMENTOS USADOS PARA EL DESARROLLO:
  Paquete de personajes low poly con animaciones de Unity Asset Store:
