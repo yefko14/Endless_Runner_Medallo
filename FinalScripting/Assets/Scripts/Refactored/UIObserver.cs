@@ -9,9 +9,24 @@ public class UIObserver : MonoBehaviour
     [SerializeField] GameObject CanvasOnDead;
     [SerializeField] GameObject Spray;
     [SerializeField] Text coins;
-    [SerializeField] Text spray;
+    [SerializeField] Text coins2;
 
     Player player;
+
+    public static UIObserver Instance { get; private set; }
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            //DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
@@ -37,7 +52,7 @@ public class UIObserver : MonoBehaviour
             coins.text = player.counterCoin.ToString();
         }
     }
-    void OnPlayerReseivedSpray()
+    public void OnPlayerReseivedSpray()
     {
         if(player.counterSpray == 1)
         {
@@ -48,6 +63,7 @@ public class UIObserver : MonoBehaviour
     void OnPlayerDied()
     {
         StartCoroutine(Dead());
+        coins2.text = player.counterCoin.ToString();
     }
     IEnumerator Dead()
     {

@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Spray : Coin
 {
-    public override void Destroy()
+    public override void OnTriggerEnter(Collider collision)
     {
-        player.GetSpray();
-        transform.position = Initial;
+        if (collision.gameObject.layer == 8)
+        {
+            player.GetSpray();
+            Destroy();
+        }
     }
 }

@@ -22,9 +22,11 @@ public class Obstacle : MonoBehaviour, IPool
     {
         transform.position = Initial;
     }
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider collision)
     {
-        player.PlayerDead();
-        Destroy();
+        if (collision.gameObject.layer == 8)
+        {
+            player.PlayerDead();
+        }
     }
 }

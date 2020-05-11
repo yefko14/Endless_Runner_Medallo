@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class ClickPolice : MonoBehaviour
 {
-    Animator anim;
-    Police police;
     Player player;
-
+    Police police;
+    UIObserver uIObserver;
     void Start()
     {
         player = Player.Instance;
-        police = GetComponent<Police>();
-        anim = GetComponent<Animator>();
+        uIObserver = UIObserver.Instance;
     }
 
     void Update()
@@ -26,8 +24,10 @@ public class ClickPolice : MonoBehaviour
                 BoxCollider bc = hit.collider as BoxCollider;
                 if (bc != null)
                 {
+                    police = bc.gameObject.GetComponent<Police>();
                     police.Killed();
                     player.counterSpray--;
+                    uIObserver.OnPlayerReseivedSpray();
                 }
             }
         }

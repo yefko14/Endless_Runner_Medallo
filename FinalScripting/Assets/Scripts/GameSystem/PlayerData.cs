@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerData : MonoBehaviour
 {
     public static int coins;
-    //Player player;
+    static Player player;
 
     //public static PlayerData Instance { get; private set; }
 
@@ -22,6 +22,10 @@ public class PlayerData : MonoBehaviour
         }
         player = Player.Instance;
     }*/
+    void Start()
+    {
+        player = Player.Instance;
+    }
 
     public void SaveGame()
     {
@@ -36,7 +40,7 @@ public class PlayerData : MonoBehaviour
 
     public static void AddCoins()
     {
-        coins += PlayerController.counterCoin;
-        //coins += player.counterCoin;
+        //coins += PlayerController.counterCoin;
+        coins += player.counterCoin;
     }
 }

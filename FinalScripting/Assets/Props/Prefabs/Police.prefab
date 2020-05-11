@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 2416606940294426723}
   - component: {fileID: 2416606940284640805}
   - component: {fileID: 2416606940548268236}
-  - component: {fileID: 2416606940548268239}
+  - component: {fileID: 2075866243409993632}
   m_Layer: 0
   m_Name: Police
   m_TagString: Untagged
@@ -266,7 +266,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 2.5, z: 1.5}
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &2416606940548268239
+--- !u!114 &2075866243409993632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,11 +275,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2416606940294130691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6532eaa3cf61dc4cb99330e89794012, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ea5e7a6ddc27184fb90ce2699d8c4ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 495434207905068044, guid: 6f1ba9d3682e70542a028c5b45e7c97f, type: 3}
-  anim: {fileID: 2416606940284640805}
+  lifeTime: 50
 --- !u!1 &2416606940294130695
 GameObject:
   m_ObjectHideFlags: 0

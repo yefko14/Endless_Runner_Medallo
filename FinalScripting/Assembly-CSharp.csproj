@@ -63,15 +63,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ClickAndDestroy.cs" />
     <Compile Include="Assets\Scripts\GameSystem\ButtonsController.cs" />
     <Compile Include="Assets\Scripts\GameSystem\CoinRotation.cs" />
     <Compile Include="Assets\Scripts\GameSystem\GameData.cs" />
     <Compile Include="Assets\Scripts\GameSystem\MoveCam.cs" />
     <Compile Include="Assets\Scripts\GameSystem\PlayerData.cs" />
     <Compile Include="Assets\Scripts\GameSystem\SaveSystem.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\PoliceController.cs" />
+    <Compile Include="Assets\Scripts\NotUsed\ClickAndDestroy.cs" />
+    <Compile Include="Assets\Scripts\NotUsed\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\NotUsed\PoliceController.cs" />
+    <Compile Include="Assets\Scripts\NotUsed\Spawn.cs" />
+    <Compile Include="Assets\Scripts\NotUsed\UICoinTotal.cs" />
+    <Compile Include="Assets\Scripts\NotUsed\UIController.cs" />
     <Compile Include="Assets\Scripts\Refactored\ClickPolice.cs" />
     <Compile Include="Assets\Scripts\Refactored\Coin.cs" />
     <Compile Include="Assets\Scripts\Refactored\IPool.cs" />
@@ -84,9 +87,6 @@
     <Compile Include="Assets\Scripts\Refactored\SpawnController.cs" />
     <Compile Include="Assets\Scripts\Refactored\Spray.cs" />
     <Compile Include="Assets\Scripts\Refactored\UIObserver.cs" />
-    <Compile Include="Assets\Scripts\Spawn.cs" />
-    <Compile Include="Assets\Scripts\UICoinTotal.cs" />
-    <Compile Include="Assets\Scripts\UIController.cs" />
     <None Include="Assets\Props\Poly City - Free Cartoon Pack\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/yefko/OneDrive/Escritorio/Semestre 7/FinalScripting/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -7,7 +7,7 @@ public class ButtonsController : MonoBehaviour
 {
     public void ButtonPlay()
     {
-        SceneManager.LoadScene("Alpha");
+        SceneManager.LoadScene("Game");
     }
 
     public void ButtonStore()

@@ -6,7 +6,7 @@ public class Coin : MonoBehaviour, IPool
 {
     [SerializeField] float lifeTime;
     public Vector3 Initial { get; set; }
-    public Player player { get; set; }
+    public  Player player;
 
     void Update()
     {
@@ -22,13 +22,16 @@ public class Coin : MonoBehaviour, IPool
         transform.position = position;
         Invoke("Destroy", lifeTime);
     }
-    public virtual void Destroy()
+    public void Destroy()
     {
-        player.PlusPoints();
         transform.position = Initial;
     }
-    void OnTriggerEnter(Collider other)
+    public virtual void OnTriggerEnter(Collider collision)
     {
-        Destroy();
+        if (collision.gameObject.layer == 8)
+        {
+            player.PlusPoints();
+            Destroy();
+        }
     }
 }

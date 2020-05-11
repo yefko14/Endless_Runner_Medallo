@@ -11,7 +11,7 @@ public class Pool : MonoBehaviour
     GameObject[] objects;
     int index = 0;
 
-    private void Awake()
+    private void Start()
     {
         items = new IPool[length];
         objects = new GameObject[length];

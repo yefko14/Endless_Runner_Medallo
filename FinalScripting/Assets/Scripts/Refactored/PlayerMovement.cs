@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     {
         GetComponent<Rigidbody>().velocity = new Vector3(horizVel, 0, ZVel);
 
-        if (Input.GetKeyDown(KeyCode.A) && laneNum > 1 && controlLocked && UIController.dead)
+        if (Input.GetKeyDown(KeyCode.A) && laneNum > 1 && !controlLocked)
         {
             horizVel = -4;
             laneNum -= 1;
@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(stopSlide());
         }
 
-        if (Input.GetKeyDown(KeyCode.D) && laneNum < 3 && !controlLocked && !UIController.dead)
+        if (Input.GetKeyDown(KeyCode.D) && laneNum < 3 && !controlLocked)
         {
             horizVel = 4;
             laneNum += 1;
