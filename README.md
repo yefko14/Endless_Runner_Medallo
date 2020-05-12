@@ -1,7 +1,7 @@
 # Endless_Runner_Medallo
 Beta version 1
 
-En esta versión se implementó todo el codigo refactorizado, se trató de pulir un poco el juego con musica de fondo e imagen en el inicio, al igual que los modelos 3d de las casas para que no se viese el color solido que tenían las versiones del Alpha y avance del Beta. Principalmente se buscó solucionar bugs, como los del policia o problemas de código que se presentaron al hacer el refactor, como también solucionar el problema del spawner.
+En esta versión se implementó todo el codigo refactorizado, por desgracia no se pudo terminar la tienda a tiempo, se trató de pulir un poco el juego con musica de fondo e imagen en el inicio, al igual que los modelos 3d de las casas para que no se viese el color solido que tenían las versiones del Alpha y avance del Beta. Principalmente se buscó solucionar bugs, como los del policia o problemas de código que se presentaron al hacer el refactor, como también solucionar el problema del spawner.
 Se trató de implementar lo sugerido en las versiones Alpha sobre el disparo del policia (algún indicador de cuándo puede el jugador disparar o a qué distancia el personaje recibe el disparo) pero por falta de tiempo no se pudo implementar completamente así que la versión subida de este Beta no lo usa.
 
 ELEMENTOS USADOS PARA EL DESARROLLO:
